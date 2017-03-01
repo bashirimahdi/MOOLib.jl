@@ -1,3 +1,16 @@
+###############################################################################
+#                                                                             #
+#  This file is part of the julia module for Multi Objective Optimization     #
+#  (c) Copyright 2017 by Aritra Pal, Hadi Charkhgard                          #
+#                                                                             #
+#  Permission is granted for academic research use.  For other uses,          #
+#  contact the authors for licensing options.                                 #
+#                                                                             #
+#  Use at your own risk. I make no guarantees about the correctness or        #          
+#  usefulness of this code.                                                   #
+#                                                                             #
+###############################################################################
+
 module MOOLib
 
 using MOOFramework

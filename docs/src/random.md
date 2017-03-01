@@ -1,24 +1,7 @@
-# Multi-Objective Optimization Instances Library in Julia #
+# Random Instance Generators #
 
-## Type of Problems ##
-
-### Biobjective Assignment Problems (BOAP) ###
+## Biobjective Multi Dimensional Knapsack Problems ##
 
 ```@docs
-read_boap_hadi_instance(filename::AbstractString)
-```
-
-```@docs
-read_boap_hadi_non_dom_pts(filename::AbstractString)
-```
-
-```@docs
-read_boap_hadi(num::Int64)
-```
-
-### Biobjective Knapsack Problems (BOKP) ###
-
-## Index ##
-
-```@index
+generate_bokp_instances(num_var::Int64, num_cons::Int64, sparse::Bool)
 ```

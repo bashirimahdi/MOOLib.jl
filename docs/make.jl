@@ -1,5 +1,5 @@
 push!(LOAD_PATH,"../src/")
-using Documenter, MOOLib
+using Documenter, MOOLib, MOOFramework
 
 makedocs(
 	modules = [MOOLib],
@@ -11,7 +11,7 @@ makedocs(
         "Reading and Writing Instances" => "api.md",
         "Biobjective Binary Programs" => "bobp.md",
         "Random Instance Generators" => "random.md"
-    ]
+    ],
     doctest = false
 )
 

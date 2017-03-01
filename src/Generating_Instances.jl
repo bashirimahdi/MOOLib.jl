@@ -1,6 +1,15 @@
-#####################################################################
-# Multi-Objective Multi-Dimensional 0-1 Assignment Problem          #
-#####################################################################
+###############################################################################
+#                                                                             #
+#  This file is part of the julia module for Multi Objective Optimization     #
+#  (c) Copyright 2017 by Aritra Pal, Hadi Charkhgard                          #
+#                                                                             #
+#  Permission is granted for academic research use.  For other uses,          #
+#  contact the authors for licensing options.                                 #
+#                                                                             #
+#  Use at your own risk. I make no guarantees about the correctness or        #          
+#  usefulness of this code.                                                   #
+#                                                                             #
+###############################################################################
 
 #####################################################################
 # Multi-Objective Multi-Dimensional 0-1 Knapsack Problem            #
@@ -19,19 +28,12 @@
 	return MOOInstance(Int64[], collect(1:num_var), Int64[], var_bounds, obj_func_coeffs, lhs_ineq_cons, rhs_ineq_cons, Array(Int64, 1, 1), Int64[])
 end
 
-#####################################################################
-# Multi-Objective Multi-Dimensional 0-1 Set Covering Problem        #
-#####################################################################
-
-#####################################################################
-# Multi-Objective Multi-Dimensional 0-1 Set Packing Problem         #
-#####################################################################
-
-#####################################################################
-# Bi-Objective Multi-Dimensional 0-1 Knapsack Problem               #
-#####################################################################
-
-function generate_bokp_instances(num_var::Int64=10, num_cons::Int64=1, sparse::Bool=true)
+"""
+	generate_bokp_instances(num_var::Int64, num_cons::Int64, sparse::Bool)
+	
+ Returns a `BOBPInstance` of a random Bi Objective Knapsack Problem with `num_var` binary variables and `num_cons` inequality constraints.
+"""
+function generate_bokp_instances(num_var::Int64, num_cons::Int64, sparse::Bool)
 	if sparse
 		A::Array{Int64,2} = rand(0:100, num_cons, num_var)
 	else

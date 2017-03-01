@@ -4,7 +4,7 @@ This library is a collection of instances and their true non dominated frontiers
 
 As `MOOFramework.jl` can only handle instances of the form:
 $\begin{align}
-\min & c \dot x \\
-\text{s.t.} & A \dot x & \geq b \\
-& G \dot x & = H
-\end{align}$. All instances and their true non dominated frontiers ( is available ) are also returned in this form.
+\text{min } & c x \\
+\text{s.t. } & A x \geq b \\
+& G x = H
+\end{align}$. All instances and their true non dominated frontiers ( if available ) are also returned in this form.
