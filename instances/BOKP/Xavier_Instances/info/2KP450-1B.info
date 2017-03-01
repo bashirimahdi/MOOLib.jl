@@ -1,0 +1,17 @@
+problem size: 450
+nb objectives: 2
+nb solutions: 1917
+capacity: 11532
+cardinality lower bound: 133
+cardinality upper bound: 316
+size of Pareto front: 1626
+nb supported solutions: ???
+nb not supported solutions: ???
+nb supported points: 85
+nb not supported points: 1541
+minimum cardinality: 274
+maximum cardinality: 297
+nb variables always set: 175
+nb variables always unset: 74
+nb variables in the choice: 201
+solution pattern: 0...01..101.0..0111.01...0111.1.001..11....11111..01.1.1.1..0.101.011.1.01111.10.11..10....10101101.0.1.100..1.01.11..0...1..00.01..0..1.01011.1111100.1.11..1.11.1.11..011....1..0.110.10.1.111..1111.11.1111...11..0.11...01..1..1101......1...00111111...101....11..1.1.0.1.1..1....11.011...01.....11.1.101..10.11.10......000100...1..0.111.0.11.1001.1.0..01.0.01111..1.0101.1.1.0.1.1..10.10.1..1..10.110..11.101011.1..1...111..0.1011...100..11.1.1....1.

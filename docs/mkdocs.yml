@@ -1,0 +1,51 @@
+site_name:        MOOLib.jl
+repo_url:         https://github.com/aritrasep/MOOLib.jl.git
+site_description: Multi Objective Optimization Instance Library
+site_author:      Aritra Pal
+
+theme: material
+
+copyright: Copyright © 2017 Aritra Pal, Hadi Charkhgard
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - codehilite
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+  - admonition
+
+docs_dir: 'build'
+
+pages:
+  - Home: index.md
+  
+extra:
+  version: 0.1
+  author:
+    github: aritrasepmarkdown_extensions:
+  - codehilite
+  - extra
+  - tables
+  - fenced_code
+  - admonition
+
+docs_dir: 'build'
+
+pages:
+  - Home: index.md
+  - Reading and Writing Instances: api.md
+  - Biobjective Binary Programs: bobp.md
+  - Random Instance Generators: random.md
+  
+extra:
+  version: 0.1.0
+  author:
+    github: aritrasep

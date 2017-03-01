@@ -1,0 +1,11 @@
+language: julia
+julia:
+  	- 0.5
+  	- release
+  	- nightly
+os:
+	- linux
+
+after_success:
+  	- julia -e 'Pkg.add("Documenter")'
+  	- julia -e 'cd(Pkg.dir("MOOLib.jl")); include(joinpath("docs", "make.jl"))'
