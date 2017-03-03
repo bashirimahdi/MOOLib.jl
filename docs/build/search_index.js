@@ -13,7 +13,31 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Multi-Objective Optimization Instances Library in Julia",
     "category": "section",
-    "text": "This library is a collection of instances and their true non dominated frontiers ( if available ) of various classes of Multi Objective Optimization problem instances, especially pure and mixed integer program. The instances are returned as a MOOInstance or a BOOInstance.As MOOFramework.jl can only handle instances of the form: beginalign textmin   c x \ntextst   A x geq b \n G x = H endalign. All instances and their true non dominated frontiers ( if available ) are also returned in this form."
+    "text": "This library is a collection of instances and their true non dominated frontiers ( if available ) of various classes of Multi Objective Optimization problem instances, especially pure and mixed integer program. The instances are returned as a MOOInstance or a BOOInstance.As MOOFramework.jl can only handle instances of the form: beginalign* textmin   c x \ntextst   A x geq b \n G x = H endalign*. All instances and their true non dominated frontiers ( if available ) are also returned in this form."
+},
+
+{
+    "location": "index.html#Important-Note-about-the-Instances-1",
+    "page": "Home",
+    "title": "Important Note about the Instances",
+    "category": "section",
+    "text": "Most of these instances are taken from different sources. We have uploaded these instances here to make life easier for users by giving them an easier access. However, it is the responsibility of all users to refer to the original website and follow the rules (or any license) defined by the (true) owners of these instances. The details of the instances are mentioned below:Type of Problem Class Instances for each Class Total Instances Online Source Please Cite\nBiobjective 1-D Knapsack 4 1 4 1 [article1]\nBiobjective 1-D Knapsack 10 4 40 2 [article2]\nBiobjective 1-D Knapsack 1 20 20 3 [article3]\nBiobjective 1-D Knapsack 1 15 15 3 [article3]\nBiobjective 1-D Knapsack 1 3 3 3 [article3]\nBiobjective 2-D Knapsack 4 5 20 4 [article4]\nBiobjective Assingment Problem 4 5 20 4 [article4]\nBiobjective Set Covering 3 4 12 5 [article5]\nBiobjective Set Packing 20 6 120 6 [article6]"
+},
+
+{
+    "location": "index.html#Contributions-1",
+    "page": "Home",
+    "title": "Contributions",
+    "category": "section",
+    "text": "This package is written and maintained by Aritra Pal. Fork and send a pull request or create a GitHub issue for bug reports or feature requests."
+},
+
+{
+    "location": "index.html#References:-1",
+    "page": "Home",
+    "title": "References:",
+    "category": "section",
+    "text": "[article1]: Gandibleux, X. and Freville, A., 2000. Tabu search based procedure for solving the 0-1 multiobjective knapsack problem: the two objectives case. Journal of Heuristics, 6(3), pp.361-383. [article2]: F. Degoutin and X. Gandibleux. Un retour d'expériences sur la résolution de problèmes combinatoires bi-objectifs. Journée Programmation Mathématique Multiobjectifs (PM2O). May 17th, 2002, Angers, France.[article3]: Captivo, M.E., Clı́maco, J., Figueira, J., Martins, E. and Santos, J.L., 2003. Solving bicriteria 0–1 knapsack problems using a labeling algorithm. Computers & Operations Research, 30(12), pp.1865-1886.[article4]: Boland, N., Charkhgard, H. and Savelsbergh, M., 2015. A criterion space search algorithm for biobjective integer programming: The balanced box method. INFORMS Journal on Computing, 27(4), pp.735-754.[article5]: Soylu, B., 2015. Heuristic approaches for biobjective mixed 0–1 integer linear programming problems. European Journal of Operational Research, 245(3), pp.690-703.[article6]: Delorme, X., Gandibleux, X. and Degoutin, F., 2010. Evolutionary, constructive and hybrid procedures for the bi-objective set packing problem. European Journal of Operational Research, 204(2), pp.206-217."
 },
 
 {
@@ -269,7 +293,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Random Instance Generators",
     "title": "Biobjective Multi Dimensional Knapsack Problems",
     "category": "section",
-    "text": "generate_bokp_instances(num_var::Int64, num_cons::Int64, sparse::Bool)"
+    "text": "generate_bokp_instances(num_var::Int64, num_cons::Int64, sparse::Bool)The method for generating a random biobjective multi dimensional knapsack instance is as follows:When sparse = truebeginalign*\nc^1_i  in 1100  forall i in 1 n \nc^2_i  in 1100  forall i in 1 n \nA_ij  in 0100  forall i in 1 n j in 1 m \nb_j  = lceil dfracsum_i A_ij2 rceil  forall j in 1 m\nendalign*When sparse = falsebeginalign*\nc^1_i  in 1100  forall i in 1 n \nc^2_i  in 1100  forall i in 1 n \nA_ij  in 1100  forall i in 1 n j in 1 m \nb_j  = lceil dfracsum_i A_ij2 rceil  forall j in 1 m\nendalign*"
 },
 
 ]}
