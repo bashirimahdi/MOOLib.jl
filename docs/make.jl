@@ -18,7 +18,7 @@ makedocs(
 deploydocs(
 	deps = Deps.pip("pygments", "mkdocs", "mkdocs-material"),
 	make = nothing,
-    repo = "github.com/aritrasep/MOOLib.jl.git",
+    repo = "github.com/MOOLabUSF/MOOLib.jl.git",
     target = "build",
     julia  = "0.5",
     osname = "ubuntu"
