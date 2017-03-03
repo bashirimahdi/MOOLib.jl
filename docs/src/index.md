@@ -25,10 +25,6 @@ $\begin{align*}
 | Biobjective Set Covering       | 3     | 4                        | 12              | [5](http://xgandibleux.free.fr/MOCOlib/MOSCP.html)                                                                  | [^article5]   |
 | Biobjective Set Packing        | 20    | 6                        | 120             | [6](http://www.emse.fr/~delorme/SetPacking.html#BOSPP)                                                             | [^article6]   |
 
-## Contributions ##
-
-This package is written and maintained by [Aritra Pal](https://github.com/aritrasep). Fork and send a pull request or create a [GitHub issue](https://github.com/MOOLabUSF/MOOLib.jl/issues) for bug reports or feature requests.
-
 ## References: ##
 
 [^article1]: Gandibleux, X. and Freville, A., 2000. Tabu search based procedure for solving the 0-1 multiobjective knapsack problem: the two objectives case. Journal of Heuristics, 6(3), pp.361-383. 
